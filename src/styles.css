@@ -1,1 +1,286 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+
+*{
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #616161;
+    box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body{
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+router-outlet + * {
+    padding: 0 16px;
+  }
+
+app-top-bar{
+    width: 100%;
+    min-width: 4z0px;
+    height: 68px;
+    background-color: #4d94aa;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+app-top-bar h1{
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    font-size: 32px;
+  }
+  
+h2 {
+    font-size: 20px;
+}
+
+h1, h2{
+    font-weight: lighter;
+}
+
+p {
+    font-size: 14px;
+  }
+
+a{
+    text-decoration: none;
+    color: #1976d2;
+    cursor: pointer;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+.button, button{
+    display: inline-flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    cursor: pointer;
+    padding: 4px 16px;
+    font-size: 14px;
+    border-radius: 2px;
+    border: none;
+}
+
+.button svg{
+    height: 28px;
+    width: 28px;
+    fill: #4d94aa;
+    padding-right: 4px;
+}
+
+.button{
+    color: #4d94aa;
+    background-color: white;
+}
+
+app-product-list{
+    background-color: #cee0f1;
+    padding-bottom: 50px;
+}
+
+.products-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.product{
+    background-color: #ffffff;
+    padding: 8px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.product-details{
+    background-color: white;
+    padding: 15px;
+}
+
+img{
+    margin: 5px;
+    height: 220px;
+    width: 220px;
+    display: inline-block;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+.product-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.round-btn svg{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+}
+
+.round-btn svg:hover{
+    cursor: pointer;
+    background-color: #f0f0f0cb;
+    border-radius: 50px;
+}
+
+.cart-item, .shipping-item{
+    width: 100%;
+    min-width: 375px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 32px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+    background-color: #ebf8da;
+    align-items: center;
+}
+
+app-cart img{
+    height: 50px;
+    width:60px;
+    border: none;
+}
+
+.prices{
+    display: flex;
+}
+
+.prices h4{
+    margin-right: 10px;
+}
+
+#cart-items-count{
+    background-color: rgb(255, 75, 75);
+    border: 2px solid whitesmoke;
+    color: white;
+    padding: 2px 6px;
+    margin: 0;
+    border-radius: 25px;
+    font-size: 12px;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+
+/*cart items table*/
+#table-container{
+    width: 100%;
+    min-width: 1400px;
+}
+
+#cart-table{
+    border-collapse: collapse;
+    counter-reset: css-counter 0;
+    width: 80%;
+}
+
+#cart-table th{
+    background-color: rgb(197, 197, 197);
+    padding: 10px 20px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#cart-table td{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#cart-table td:first-child::before{
+    counter-increment: css-counter 1;
+    content: counter(css-counter);
+}
+
+app-cart{
+    width: 100%;
+    background-color: white;
+}
+
+app-cart #cart-gif img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 600px;
+    cursor: default;
+}
+
+app-cart #cart-gif h3{
+    cursor: default;
+    text-align: center;
+    min-width: 650px;
+}
+
+#total-price-table{
+    margin: 30px 300px;
+    padding: 5px;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    float: right;
+}
+
+#total-price-table th{
+    border-bottom: 2px solid rgb(212, 28, 28);
+}
+
+#total-price-table tr{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#cart-btns{
+    margin: 10px 300px 50px 300px;
+    float: right;
+}
+
+#order-btn{
+    background-color: rgb(248, 119, 87);
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+#clear-btn{
+    margin-right: 30px;
+    padding: 10px 20px;
+    background-color: rgb(150, 150, 150);
+    color: white;
+    font-size: 14px;
+}
+
+app-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+app-footer div{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 2px 0px;
+    background-color: #4d94aaf5;
+}

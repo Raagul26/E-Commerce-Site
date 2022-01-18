@@ -1,0 +1,59 @@
+<h3>Cart</h3>
+
+<p>
+    <a routerLink="/shipping">
+        Shipping Prices
+    </a>
+</p>
+
+<div *ngIf="items.length > 0 else emptyCart" id="table-container">
+  <table id="cart-table">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let item of items">
+        <td></td>
+        <td><img style="display: block;" src="{{item.image}}" > <b>{{item.title}}</b> </td>
+        <td>x {{item.qty}}</td>
+        <td>{{item.price | currency:"INR"}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table id="total-price-table">
+    <tr>
+      <th>Price Details</th>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td>{{totalPrice | currency:'INR'}}</td>
+    </tr>
+    <tr>
+      <td>Delivery Charges</td>
+      <td>{{50 | currency:'INR'}}</td>
+    </tr>
+    <tr>
+      <td>Total Amount</td>
+      <td>{{totalPrice + 50 | currency:'INR'}}</td>
+    </tr>
+  </table>
+
+  <div id="cart-btns">
+    <button id="clear-btn" (click)="clearCart()" >Clear Cart</button>
+    <button id="order-btn" (click)="onSubmit()">Place Order</button>
+  </div>
+  
+</div>
+
+<ng-template #emptyCart>
+  <div id="cart-gif">
+    <h3>Your Cart Is Empty</h3>
+    <img src="../../assets/empty cart.gif">
+  </div>
+</ng-template>
