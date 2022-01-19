@@ -49,3 +49,7 @@ img:hover{
     background-color: #f0f0f0cb;
     border-radius: 50px;
 }
+
+h4{
+    font-weight: 500;
+}
