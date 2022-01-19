@@ -1,6 +1,7 @@
 .product-details{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 img{
@@ -37,4 +38,9 @@ button{
     font-size: 16px;
     padding: 5px 10px;
     font-weight: 500;
+}
+
+:host{
+    background-color: white;
+    width: 100vw;
 }

@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 18px;
+    margin-bottom: 50px;
 }
 
 .product{
@@ -52,4 +53,8 @@ img:hover{
 
 h4{
     font-weight: 500;
+}
+
+:host{
+    background-color: rgb(253, 250, 249);
 }

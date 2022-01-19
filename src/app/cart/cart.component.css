@@ -5,20 +5,21 @@
 #cart-table{
     border-collapse: collapse;
     counter-reset: css-counter 0;
-    width: 80%;
+    min-width: 1000px;
+    max-width: 1200px;
+    border: 1px solid gray;
+    background-color: rgb(49, 149, 236);
 }
 
 #cart-table th{
     background-color: rgb(197, 197, 197);
     padding: 10px 20px;
-    border: 1px solid rgb(0, 0, 0);
 }
 
 #cart-table td{
     background-color: rgb(255, 255, 255);
     padding: 10px 20px;
     text-align: center;
-    border: 1px solid rgb(0, 0, 0);
 }
 
 #cart-table td:first-child::before{
@@ -42,11 +43,11 @@
 }
 
 #total-price-table{
-    margin: 30px 300px;
+    margin: 30px 0px;
     padding: 8px;
     background-color: rgb(238, 237, 237);
     border-radius: 2px;
-    float: right;
+    position: sticky;
 }
 
 #total-price-table th{
@@ -76,8 +77,8 @@ button{
 }
 
 #cart-btns{
-    margin: 10px 300px 50px 300px;
-    float: right;
+    margin: 30px 10px;
+    position: sticky;
 }
 
 #clear-btn{
@@ -100,3 +101,9 @@ img{
     width:70px;
     border: none;
 }
+
+:host{
+    background-color: white;
+    width: 100vw;
+    min-width: 800px;
+  }

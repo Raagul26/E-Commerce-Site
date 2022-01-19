@@ -23,17 +23,6 @@ router-outlet + * {
     padding: 0 16px;
   }
 
-app-product-list{
-    background-color: rgb(253, 250, 249);
-    padding-bottom: 30px;
-}
-
-app-cart{
-    width: 100%;
-    background-color: white;
-    padding: 0 16px;
-}
-
 h3{
     font-weight: 400;
 }
