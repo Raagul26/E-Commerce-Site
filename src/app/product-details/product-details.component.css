@@ -14,11 +14,22 @@ img:hover{
     cursor: pointer;
 }
 
+.ratings{
+    display: flex;
+    align-items: center;
+}
+
+.ratings span{
+    margin-right: 10px;
+}
+
 .prices{
     display: flex;
 }
 
 .prices h4{
+    text-decoration:line-through;
+    font-weight: 500;
     margin-right: 10px;
 }
 

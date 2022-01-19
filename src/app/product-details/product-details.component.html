@@ -5,13 +5,13 @@
     <h3>{{ product.title }}</h3>
     <p>{{ product.description | uppercase}}</p>
 
-    <div>
-        <span [innerHTML]="starRating" style="margin-right: 8px;"></span>
-        <h5 style="display: inline;">{{product.rating.rate}} ({{product.rating.count}})</h5>
+    <div class="ratings">
+        <span [innerHTML]="starRating"></span>
+        <h5>{{product.rating.rate}} ({{product.rating.count}})</h5>
     </div>
 
     <div class="prices">
-        <h4 style="text-decoration:line-through; font-weight: 500;">{{ product.price*1.5 | number:'1.1-2'}}</h4>
+        <h4>{{ product.price*1.5 | number:'1.1-2'}}</h4>
         <h3>{{ product.price | number:'1.1-2' | currency:"INR" }}</h3>
     </div>
 

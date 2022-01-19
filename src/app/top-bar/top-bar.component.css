@@ -2,7 +2,7 @@ nav{
     width: 100%;
     min-width: 40px;
     background-color: #8ABAD3FF;
-    padding: 6px 18px;
+    padding: 8px 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,6 +20,7 @@ nav{
     color: #FCF6F5FF;
     align-items: center;
     display: flex;
+    margin-right: 15px;
 }
 
 a{
@@ -40,5 +41,5 @@ a:hover{
     font-weight: 600;
     position: absolute;
     top: 4px;
-    right: 8px;
+    right: 16px;
 }

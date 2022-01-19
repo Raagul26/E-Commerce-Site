@@ -24,7 +24,7 @@ router-outlet + * {
   }
 
 app-product-list{
-    background-color: #FCF6F5FF;
+    background-color: rgb(253, 250, 249);
     padding-bottom: 30px;
 }
 
