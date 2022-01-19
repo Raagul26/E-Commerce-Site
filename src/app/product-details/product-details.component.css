@@ -1,0 +1,29 @@
+.product-details{
+    background-color: white;
+    padding: 15px;
+}
+
+img{
+    margin: 5px;
+    height: 220px;
+    width: 240px;
+    display: inline-block;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+.prices{
+    display: flex;
+}
+
+.prices h4{
+    margin-right: 10px;
+}
+
+button{
+    font-size: 16px;
+    padding: 5px 10px;
+    font-weight: 500;
+}

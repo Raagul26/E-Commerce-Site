@@ -1,0 +1,44 @@
+nav{
+    width: 100%;
+    min-width: 40px;
+    background-color: #8ABAD3FF;
+    padding: 6px 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#brand-name{
+    color: #FCF6F5FF;
+    margin: 0;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+#button{
+    color: #FCF6F5FF;
+    align-items: center;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+#cart-items-count{
+    background-color: rgb(255, 75, 75);
+    color: #FCF6F5FF;
+    padding: 2px 6px;
+    margin: 0;
+    border-radius: 25px;
+    font-size: 10px;
+    font-weight: 600;
+    position: absolute;
+    top: 4px;
+    right: 8px;
+}

@@ -1,0 +1,102 @@
+#table-container{
+    width: 100%;
+}
+
+#cart-table{
+    border-collapse: collapse;
+    counter-reset: css-counter 0;
+    width: 80%;
+}
+
+#cart-table th{
+    background-color: rgb(197, 197, 197);
+    padding: 10px 20px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#cart-table td{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#cart-table td:first-child::before{
+    counter-increment: css-counter 1;
+    content: counter(css-counter);
+}
+
+#cart-gif img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 600px;
+    cursor: default;
+}
+
+#cart-gif h3{
+    cursor: default;
+    text-align: center;
+    min-width: 650px;
+}
+
+#total-price-table{
+    margin: 30px 300px;
+    padding: 8px;
+    background-color: rgb(238, 237, 237);
+    border-radius: 2px;
+    float: right;
+}
+
+#total-price-table th{
+    border-bottom: 2px solid rgb(212, 28, 28);
+}
+
+#total-price-table tr{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(116, 116, 252);
+}
+
+a:hover{
+    opacity: 0.9;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+}
+
+#cart-btns{
+    margin: 10px 300px 50px 300px;
+    float: right;
+}
+
+#clear-btn{
+    margin-right: 30px;
+    padding: 10px 20px;
+    background-color: rgb(150, 150, 150);
+    color: white;
+    font-size: 14px;
+}
+
+#order-btn{
+    background-color: rgb(248, 119, 87);
+    font-size: 14px;
+    padding: 10px 20px;
+    color: white;
+}
+
+img{
+    height: 60px;
+    width:70px;
+    border: none;
+}

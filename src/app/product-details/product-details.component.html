@@ -6,7 +6,7 @@
     <p>{{ product.description | uppercase}}</p>
 
     <div>
-        <span [innerHTML]="starRating"></span>
+        <span [innerHTML]="starRating" style="margin-right: 8px;"></span>
         <h5 style="display: inline;">{{product.rating.rate}} ({{product.rating.count}})</h5>
     </div>
 
