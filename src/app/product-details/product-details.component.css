@@ -1,7 +1,6 @@
 .product-details{
     background-color: rgb(255, 255, 255);
     padding: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 img{
@@ -35,9 +34,13 @@ img:hover{
 }
 
 button{
-    font-size: 16px;
-    padding: 5px 10px;
+    font-size: 14px;
+    padding: 10px 20px;
     font-weight: 500;
+    background-color: rgb(98, 170, 209);
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 :host{

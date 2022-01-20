@@ -74,6 +74,7 @@ button{
     cursor: pointer;
     border-radius: 2px;
     border: none;
+    font-weight: 500;
 }
 
 #cart-btns{
@@ -106,4 +107,13 @@ img{
     background-color: white;
     width: 100vw;
     min-width: 800px;
-  }
+}
+
+#green-tick{
+    display: flex;
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    justify-content: center;  
+    background-color: rgba(155, 155, 155, 0.692);
+}

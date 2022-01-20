@@ -46,10 +46,10 @@
   </table>
 
   <div id="cart-btns">
-    <button id="clear-btn" (click)="clearCart()" >Clear Cart</button>
+    <button id="clear-btn" (click)="clearCart()">Clear Cart</button>
     <button id="order-btn" (click)="onSubmit()">Place Order</button>
   </div>
-  
+ 
 </div>
 
 <ng-template #emptyCart>
@@ -58,3 +58,14 @@
     <img src="https://cdn.dribbble.com/users/2046015/screenshots/4591856/media/314560586aef7f1eae694d78a015c69c.gif">
   </div>
 </ng-template>
+
+<div *ngIf="display then greenTick">
+</div>
+
+<ng-template #greenTick>
+  <div id="green-tick">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ikihxv4x.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"    autoplay></lottie-player>
+  </div>
+</ng-template>
+
