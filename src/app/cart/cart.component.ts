@@ -25,9 +25,9 @@ export class CartComponent implements OnInit {
   }
 
   onSubmit(): void {
-    setTimeout(()=>{this.items=this.cartService.clearCart()},2500)
     this.display=true
     setTimeout(()=>{this.router.navigate([''])}, 2500)
+    setTimeout(()=>{this.items=this.cartService.clearCart()},2500)
     setTimeout(() => {this.display=false}, 2500);
   }
 }
