@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CartService } from './cart.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'E-Commerce-Site';
+
+  constructor(private cartService:CartService){}
+  
+  getItemsCount()
+  {
+    return this.cartService.getItems().length
+  }
 }
